@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+           
+
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "nkemayangnkeng@gmail.com",
+        Password: "1999Nene",
+        To: 'nkemayangnkeng@gmail.com',
+        From: "nkemayangnkeng@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+        Attachments: [
+          {
+            name: "File_Name_with_Extension",
+            path: "Full Path of the file"
+          }]
+      })
+        .then(function (message) {
+          alert("Mail has been sent successfully")
+        });
+    }
+  </script>
+
+<body>
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+    <section class="payment">
+        <div class="cc-box box">
+            <h2 class="box-title">Name  </h2>
+            <div class="input-group">
+                <label class="user-input-label" for="cc">user_name</label>
+            <input type="text" class="user-input label" id="cc" />
+                        </div>
+                        
+        <div class="name-box box">
+            
+            <h2 class="box-title">Email</h2>
+            <div class="input-group">
+                <label class="user-input-label" for="cc">user_email</label>
+                <input type="email" class="user-input" id="name"/>
+            </div>
+        </div>
+        <div class="cc-box box">
+            
+            <h2 class="box-title">Order </h2>
+            <div class="input-group">
+                <label class="user-input-label" for="cc">item</label>
+                <form action="#">
+                    <label class="user-input-label"  for="cc">item</label>
+                     <select name="message"class="user-input label"  id="cc" multiple>
+                      <option  class="item-options-list" value="meat pie">meat pie mit Schwein Hackfleisch</option>
+                      <option  class="item-options-list"value="meat pie">meat pie mit Rind Hackfleisch</option>
+                      <option  class="item-options-list"value="meat pie">meat pie mit gemischte Hackfleisch</option>
+                      <option  class="item-options-list"value="meat pie">meat pie mit Kartofeln und gemüse</option>
+                      <option class="item-options-list" value="meat pie">meat pie mit Kartofeln und gemischte Hackfleisch</option>
+                      <option  class="item-options-list"value="meat pie">meat pie mit Gemüse</option>  
+                    </select>
+                    <input type="submit"class="user-input short-input" value ="Place Order"> 
+                </form>
+             
+             
+             </div>
+             <div class="cc-box box">
+            
+                <h2 class="box-title">Sonderbestellung </h2>
+                <div class="input-group">
+             <label class="user-input-label" for="cc">message</label>
+             <textarea name="message"class="user-input label"  id="cc"></textarea>
+             <input type="submit"class="user-input short-input" value ="Place Order">       
+                        
+        </div>
+       
+</body>
+</html>

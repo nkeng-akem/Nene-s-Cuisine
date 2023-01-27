@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1rem;
+}
+.main-nav{
+    background-color:rgb(207,46,46);
+    color:#fbf2c0;
+    font-size:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:normal;
+}
+nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:flex-end;
+    align-items:flex-end;
+    gap:1rem;
+    
+}
+ .nav-list{
+        
+        display:flex;
+        justify-content:flex-end;
+        align-items:flex-end;
+        font-size:30px;
+        height: 70px;
+        
+    
+}
+.nav-list .list-item{
+    display:inline-block;
+    
+   
+}
+
+.group{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex:flow;
+    justify-content:flex-end;
+    align-items: flex-end;
+ 
+}
+.nav-list{
+    list-style-type: none;
+
+
+}
+.nav-list .list-item{
+    display:inline-block;
+    
+   
+}
+.navbar a{
+    color:black;
+    text-decoration:none;
+}
+ul {
+    display:inline-block;
+    margin: 0;
+    padding:0;
+}
+ul li{
+    display:inline-block;
+}
+ul li:hover{
+  
+     background-image: linear-gradient( to right,#fc6076, #ff9a44, #ef9d43, #e75516);
+     box-shadow: 0 10px 15px 0 rgba(252, 104, 110, 0.75);
+    background-size: 300% 100%;
+    width:150px;
+    text-align:center;
+    border-radius: 50px;
+}
+
+nav a{
+    color: rgb(240, 194, 161);
+    text-decoration: none;
+    
+}
+div{
+    max-width: 400px;
+    border-bottom: 1px solid #999;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 1rem;
+   padding: 1rem;
+}
+
+* {
+    padding: 1 rem;
+    
+}
+dt{
+font-weight: bold;
+grid-column-start: 1;
+padding:0;
+/*border:1px dotted blue;*/
+}
+dd{
+margin: 0;
+grid-column-start: 2;
+/*border:1px solid red;*/
+}
+dd:first-of-type{
+    grid-row-start: 1;
+}
+
+h1{
+    color:#fbf2c0;
+}
+h2{
+    color:rgb(79, 13, 13)
+    
+}
+h3{
+    color:chocolate
+}

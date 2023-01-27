@@ -1,0 +1,14 @@
+:root{
+    --black: #17132;
+    --plum: #4b0149;
+    --hotmag:#ff17e4;
+    --magenta:#e310cb;
+    --aqua:#56fbfb;
+    
+}
+.contact{
+    width:400px;
+    text-align: center;
+    margin:0 auto;
+    padding: 3rem 0;
+}

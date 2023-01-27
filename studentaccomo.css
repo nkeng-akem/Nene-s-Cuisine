@@ -1,0 +1,83 @@
+body{
+    background-color:aliceblue;
+}
+
+h1{
+    background:linear-gradient(to right,skyblue,white);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+h2{
+  background:linear-gradient(to right,skyblue,white);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+h3{
+    background:linear-gradient(to right,skyblue,white);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+  }
+.p{
+    text-align: center;
+  justify-content: center;
+}
+
+.container{
+    background:pink;
+    height:40vh;
+    width:60vw;
+    padding:0.5em;
+    margin:25vh auto 0;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.item{
+    background:lightblue;
+    margin:0.5em;
+  
+    
+}
+.one{
+    flex-grow:2;
+    flex-shrink:2;
+    flex-basis:250px;
+    order:1;
+}
+.two{
+    flex-grow:2;
+    flex-shrink:2;
+    flex-basis:250px;
+    order:2;
+}
+.three{
+    flex-grow:2;
+    flex-shrink:2;
+    flex-basis:250px;
+    order:3;
+}
+.four{
+    flex-grow:2;
+    flex-shrink:2;
+    flex-basis:250px;
+    order:4;
+}
+.container-2{
+    display:flex;
+    justify-content:flex-start;
+    
+}
+.container-1{
+    display:flex;
+    align-items:flex-start;
+}
+.container-1 div,.container-2 div{
+    border:1px#ccc solid;
+    padding:10px;
+}
+.unordered li:nth-child(even){
+    background-color:red;
+    list-style-type:'😁';
+}
+
